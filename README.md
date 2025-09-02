@@ -99,7 +99,9 @@ Methods:
 placeCard: This method takes a card and playerMana as arguments. It checks if there's an available spot on the player's rows, as certain cards can only be placed on specific rows (front or back). The method returns 0 for a successful placement, 1 if the player has insufficient mana, and -1 if the row is full.
 
 getCardsOnTable: This method iterates through the entire board and returns an array of all the cards currently on the board.
+
 getCard: This method takes two numbers, x and y, as parameters and returns the card at board[x][y].
+
 updateGameOnCard: This method takes a card and two numbers, x and y, as arguments. Since any action applied to a card on the board is performed on a copy, this method is used to update the card's health, attack damage, or any other necessary fields on the actual board. If the card's health is 0 or less, it places null on the board; otherwise, it places the updated card.
 
 rearrange: This method iterates through each row of the board. If there is a null spot between two different cards, it moves the card on the right to the empty spot on the left.
