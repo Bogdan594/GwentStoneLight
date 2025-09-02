@@ -1,0 +1,215 @@
+commit 4b1c702f6a0df6a76f7754165c4ab79546238a81
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 21 21:49:11 2024 +0200
+
+    the end
+
+commit 986faa369366ccc53e113c9701df88026fe886d4
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 21 21:49:02 2024 +0200
+
+    the end
+
+commit 9dd364023e9ac2f802909fce0e0c8dcfe2457b9a
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 20 00:55:04 2024 +0200
+
+    100 + heroes separat
+
+commit 6ae0ba77c8aa9d5f6aa4d5d064204d4d35ef638a
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 20 00:55:00 2024 +0200
+
+    100 + heroes separat
+
+commit 8e53a4867392c16bff531923aebd656afb7d985b
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 20 00:08:58 2024 +0200
+
+    100 last
+
+commit a998a3a78f56b22888899c7a0ec73fc46512738f
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Mon Nov 18 10:56:37 2024 +0200
+
+    100 last
+
+commit ba085f83d439f6c133308009f9d9682c32e46409
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sun Nov 17 15:01:47 2024 +0200
+
+    100
+
+commit faf4137ea5884e4cbcd03a51687b4dd852c84a74
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sat Nov 16 21:26:56 2024 +0200
+
+    done a part of checkstyle problems
+
+commit beba00c8b57c82bad0963fe2e7bddf924760676e
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sat Nov 16 17:33:45 2024 +0200
+
+    all implementation done
+
+commit 0f02ee8e355516bd6a91dd8a5d28dd64e277a5ae
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sat Nov 16 17:12:12 2024 +0200
+
+    done muliple games
+
+commit 31db8faff23c723f0e95e80d27361028b821fa9b
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sat Nov 16 17:12:04 2024 +0200
+
+    bone muliple games
+
+commit 92d75685de150394a82816cf28615a389d49c73c
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Fri Nov 15 19:52:14 2024 +0200
+
+    almost done heroAbility
+
+commit c089d2745968d0bf981cd850bc3847d062de2bb1
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Fri Nov 15 19:52:09 2024 +0200
+
+    almost done heroAbility
+
+commit 465f153e52e0f69a98ef02ad68f2709ec478fdb7
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 23:45:38 2024 +0200
+
+    finally done attack hero
+
+commit a6c694b333d67d9c9fbe0e52b1a7849b3abcc783
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 23:45:35 2024 +0200
+
+    finally done attack hero
+
+commit 895f597cd01e3c1e53f8ea38eeb43ade1b436587
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 22:24:32 2024 +0200
+
+    done useHeroAbility if valid
+
+commit caaddf18da37e95c96f45f8e557effa45b9dfc22
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 22:24:30 2024 +0200
+
+    done useHeroAbility if valid
+
+commit a59e5570405c9d153401239bd698db374e522c64
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 22:24:23 2024 +0200
+
+    done useHeroAbility if valid
+
+commit 75bf8e8f613274b2fac5f8c5261bfd836012c63e
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 14:00:08 2024 +0200
+
+    done cardUsesAbility full + deleted all verification process
+
+commit e56394cc0896873339e236cc4538cd0e5567e7a5
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 14 13:58:34 2024 +0200
+
+    done cardUsesAbility full
+
+commit 212cb012ede081dad0078497a0e229a8b1af0c73
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 13 10:56:50 2024 +0200
+
+    done a little bit more "design"
+
+commit 0a6fc59e527c70f9221fbe1f37fdbf50a68085c5
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 13 10:56:27 2024 +0200
+
+    done a little bit more "design"
+
+commit f984f160f2fa4e6449db544cffc00c1f7a29ceae
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 13 00:27:14 2024 +0200
+
+    cardAbility
+
+commit 1fc4570221f222bf6de7c768b48f87f423028997
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Tue Nov 12 23:57:19 2024 +0200
+
+    done two new classes for output and done a new function to verify if a card is a Tank
+
+commit 374f4396ab9ba2b623b84e5ec79e0f28cd12b4c5
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Tue Nov 12 23:57:11 2024 +0200
+
+    done two new classes for output and done a new function to verify if a card is a Tank
+
+commit 1ed2ded302ebaa8fd121fb2f13c7994e78650ceb
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Tue Nov 12 17:11:19 2024 +0200
+
+    done attackCard all
+
+commit 8127aae2532e7c9bab18bf4b890dbd53944fc0e2
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Tue Nov 12 17:10:53 2024 +0200
+
+    done attackCard all
+
+commit b58c06b08a41d3c6606961a2cb10fd5564c8ccbb
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Tue Nov 12 00:42:05 2024 +0200
+
+    done attackCard, attackCardInvalid near done
+
+commit f0ab6bf8467aa859ae4ef0c7b9b310f87fb6e232
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Mon Nov 11 15:56:02 2024 +0200
+
+    done placeCardInvalid
+
+commit b2aa16b01fe3405d740b67a924affe747fea6536
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Mon Nov 11 00:21:14 2024 +0200
+
+    done placeCard
+
+commit 512eea53a5e747d90d2cf561c9d87a36e617e818
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sun Nov 10 15:38:35 2024 +0200
+
+    primele puncte; rezolvat start game pt2
+
+commit 472b7df3aef5a696d3f7c86dc1390ecc192e4514
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Sun Nov 10 15:35:14 2024 +0200
+
+    primele puncte; rezolvat start game
+
+commit 97d3a0bc0588848aba08e0b7df5430e7f630b5f6
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Thu Nov 7 00:50:57 2024 +0200
+
+    revenire in forta dupa victoria lui Bayern
+
+commit 7ed02cc20084041efbb9a7a24f06ace9a09a0070
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Wed Nov 6 20:55:23 2024 +0200
+
+    inainte de restart
+
+commit f70585c705556a916b2b597f548d3ebec8fb7166
+Author: bogdan.andrei0509 <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Tue Nov 5 16:49:54 2024 +0200
+
+    test
+
+commit 408ace1d50347267e2867eb434a26cab434172f0
+Author: Andrei Bogdan <bogdan.andrei0509@stud.acs.upb.ro>
+Date:   Mon Oct 28 14:35:33 2024 +0200
+
+    first commit
