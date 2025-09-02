@@ -1,0 +1,115 @@
+Clasa Card
+Am folosit field-urile impuse din enunt(name, attackDamage, health, description, colors, mana) si am folosit, in plus, inca doua:
+1. isFrozen - pentru a retine daca o carte este inghetata(1 daca este, 0 by default daca nu e);
+2. hasAttackedThisTurn - pentru a retine daca o carte a atacat/folosit abilitatea in tura curenta(1 pentru da, 0 pentru nu).
+Metodele din aceasta clasa, pe langa constructori, settere si gettere sunt urmatoarele:
+1. attackAnotherCard - primeste ca parametru un alt card, seteaza field-ul hasAttackedThisTurn la 1 si scade viata cardului selectat pentru
+atac cu attackDamage-ul cardului curent.
+2. metodele: useAbilityDisciple, useAbilityMiraj, useAbilityTheCursedOne, useAbilityTheRipper - primesc ca parametru un alt card si aplica abilitatea cardului curent pe acel card. 
+3. attackHero - primeste ca parametru un erou, seteaza field-ul hasAttackedThisTurn la 1 si scade viata eroului selectat pentru
+atac cu attackDamage-ul cardului curent.
+
+Clasa Decks 
+Aceasta clasa e facuta sa tina deck-urile unui jucator.
+Field-uri: numarul de carduri din deck-uri, numarul de deck-uri, deck-urile in sine 
+Ca metode, am modificat constructorul default intr-unul care primeste un argument de tip DecksInput , pentru a citi din fisierele din input.
+
+Clasa Actions
+Este, probabil, cea mai complexa si lunga clasa din tot acest proiect.
+Field-urile sunt aceleasi ca cele din fisierele de input.
+Metodele:
+1. Constructorul care primeste un parametru de tip ActionsInput si ia pe cazuri:
+a. cardul care ataca si care este atacat sunt diferiti de null, pentru comenzi de genul: cardUsesAttack
+b. cardul care ataca diferit de null si cardul care este atacat null, pentru comenzi de genul: useAttackHero
+c. orice altceva pentru comenzi de genul: endPlayerTurn etc.
+2. doAction, care primeste parametrii urmatori: ArrayNode(pentru output), OutputsActions, OutputCommands, Game,
+Stats, HeroUsesAbility, GameUpdate, objectMapper. 
+Aceasta metoda verifica numele comenzii curente si efectueaza in fiecare caz output-ul aferent.
+
+Clasa Constants - tine constantele de care am avut nevoie de-al lungul proiectului.
+
+Clasa Coordinatess - tine coordonatele unei carti. Nu am adaugat-o ca field pentru clasa Card intrucat ar fi complicat citirea din fisierele 
+de input.
+
+Clasa Game - e clasa care tine detaliile unui joc.
+Field-uri: Start, o lista de actiuni, PrepareGame, playerTurn, Gameboard, pl1Mana si pl2Mana pentru a tine mana fiecarui jucator, numarul 
+de runde si de turi.
+Metode: Una singura, changeTurn: in care schimb field-ul playerTurn de la 1 la 2 sau invers, in functie de jucator, cresc numarul de ture, 
+iar daca acesta e multiplu de 2 se creste numarul de runde si se adauga mana corespunzator. Daca s-a trecut de runda 10, se adauga doar 10 mana
+pe runda.
+
+Clasa Gameboard - e clasa care tine efectiv tabla de joc pe care se pun cartile.
+Astfel, field-urile sunt: board, ca o matrice 4x5 si playernTurn
+Metodele:
+1. placeCard - primeste ca argumente un card si playerMana. Se verifica daca e loc pe randurile aferente jucatorului si numele lor, pentru ca
+anumite carduri pot fi plasate doar pe un anumit rand(cel din fata sau cel din spate). Metoda returneaza 0 daca plasarea s-a realizat cu succes,
+1, daca jucatorul nu are suficienta mana si -1 daca randul e plin.
+2. getCardsOnTable - itereaza prin toata tabla si intoarce un array cu cardurile amplasate.
+3. getCard - primeste ca parametrii doua numere, x si y si intoarce cardul[x][y] de pe board.
+4. updateGameOnCard - primeste un card si doua numere, x si y. De fiecare data cand voi aplica ceva pe un card de pe board, voi lucra cu o copie a
+sa, de asta cand voi lucra, voi folosi mereu aceasta metoda pentru a actualiza viata, attackDamage si orice e necesar. Daca viata cardului e 0 sau 
+mai putin, pune pe board null, daca nu, cardul primit ca argument.
+5. rearrange - itereaza prin fiecare rand al board-ului si daca exista un spot null pe board intre 2 carduri diferite muta cardul de la mai drepta
+la stanga.
+6. afterTurnResetAttackIdx - la final de tura pentru oricare jucator, trece prin fiecare spot de pe board si seteaza field-ul hasAttackedThisTurn 
+la 0.
+7. isTank - deteremina daca o carte e tank sau nu
+8. tankExistance - determina daca exista o carte de tip tank care poate fi atacata in loc de o alta carte selectata pentru atac.
+9. unfroze - itereaza prin randurile corespunzatoare unui jucator si seteaza field-ul isFrozen la 0 dupa tura sa.
+10. getFrozenCardsOnTable - itereaza prin board si returneaza un array cu toate cardurile care au field-ul isFrozen setat la 1.
+
+Clasa GameUpdate
+O clasa care tine deck-urile jucatorilor si cardurile din mana.
+Metode: 
+1. getInHandPl1/2 : ia prima carte din deck-ul unui jucator si o pune in mana.
+2. removePl1/2CardFromHand : scoate din array-ul de carti din mana al unui jucator cartea cu numarul index. Aceasta metoda a fost folosita in 
+special cand se pune o carte pe board.
+
+Clasa Hero
+Este o clasa care mosteneste clasa Card.
+Metode:
+1. Constructorul care foloseste constructorul clasei Card si seteaza viata la 30.
+2. isAttacked, care primeste ca argument un Card si scade din viata eroului attackDamage-ul cardului primit ca argument.
+3. isDead, care verifica daca viata eroului e mai mica sau egala cu 0.
+
+Clasa Player
+O clasa folosita putin, care tine deck-urile unui jucator, numarul de jocuri jucate si numarul de victorii.
+
+Clasa PrepareGame
+O alta clasa foarte importanta, care "pregateste" jocul.
+Are ca field-uri doua de tip Player, pentru fiecare jucator, numarul de deck-uri si numarul de carduri in deck.
+Ca metode, are doar una, care citeste din input.
+
+Clasa Start
+Clasa care incepe meciul.
+Field-uri: shuffleSeed, indexul deck-ului fiecarui jucator, si jucatorul care incepe.
+Metodele sunt cele de tip getter si setter si un constructor care primeste un argument de tip StartGameInput.
+
+Clasa Stats
+Tine statisticile mai multor meciuri dintre 2 jucatori: meciuri jucate si meciuri castigate.
+Constructorul le initializeaza pe toate cu 0.
+
+Clasa OutputsActions
+Clasa contine doar metode pentru cazuri invalide ale unor actiuni, de exemplu, cazul in care se ataca un card, acesta nu e tank, 
+dar totusi exista un card de tip tank pe randurile jucatorului advers.
+Pentru fiecare metoda se creeaza un nou nod, si introduce comanda prin action.getcommand(), orice alt field relevant acelei actiuni,
+obtinut prin getter-ele action-ului si eroarea aferenta.
+
+Clasa OutputsCommands 
+Clasa contine metode pentru a afisarea a comenzilor de debug, de exemplu getPlayerMana, getPlayerDeck.
+Pentru fiecare metoda se creeaza un nou nod, si introduce comanda prin action.getcommand(), orice alt field relevant acelei actiuni,
+obtinut prin getter-ele action-ului si eroarea aferenta.
+
+
+Clasele din package-ul "heroes"
+Toate au in plus fata de clasa hero pe care o mostenesc metoda useAbility. Pentru fiecare clasa, voi descrie ce face fiecare metoda:
+1. EmpressThorina : itereaza prin board si ia cartea cu cea mai mare viata si o omoara.
+2. KingMudface : itereaza printr-un rand al board-ului si adauga 1 la field-ul health al fiecarui card.
+3. GeneralKocioraw : itereaza printr-un rand al board-ului si adauga 1 la field-ul attackDamage al fiecarui card
+4. LordRoyce : itereaza printr-un rand al board-ului si seteaza la 1 field-ul isFrozen al fiecarui card
+
+Clasa Main
+Initializez clasa Stats, si iterez prin toate jocurile.
+Pentru fiecare joc, initializez clasa Game, si clasa Start din Game.
+Se copiaza din input actiunile si deck-urile fiecarui jucator, se amesteca, se initializeaza clasele pentru comenzi si se itereaza
+prin fiecare actiune si se executa.
