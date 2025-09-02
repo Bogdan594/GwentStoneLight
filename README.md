@@ -94,9 +94,13 @@ For each method, a new node is created. The node includes the command (obtained 
 ### classes from the "heroes" package
 All of these classes inherit from the Hero class and, in addition to its methods, they each have a useAbility method. Here’s what each method does:
 EmpressThorina: This method iterates through the entire board, finds the card with the highest health, and kills it.
+
 KingMudface: This method iterates through a row on the board and adds 1 to the health field of each card in that row.
+
 GeneralKocioraw: This method iterates through a row on the board and adds 1 to the attackDamage field of each card in that row.
+
 LordRoyce: This method iterates through a row on the board and sets the isFrozen field of each card in that row to 1.
+
 ### Main
 I initialize the Stats class and iterate through all the games.
 For each game, I initialize the Game class and the Start class within the Game object.
